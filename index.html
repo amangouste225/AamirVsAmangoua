@@ -1,14 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <title>Fork Me! FCC: Test Suite Template</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    />
   </head>
 
   <body>
-    <h1>Hello World, we are software developers</h1>
+    <div class="container">
+      <h1>Survey Form</h1>
+      <p id="description"></p>
+      <form id="survey-form" class="form-control">
+        <div class="mb-3">
+          <label id="name-label" class="form-label">Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            placeholder="Enter name"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label id="email-label" class="form-label">Email address</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="name@example.com"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label class="form-label" id="number-label">Number</label>
+          <input
+            type="number"
+            id="number"
+            max="11"
+            min="5"
+            placeholder="Enter number"
+            class="form-control"
+          />
+        </div>
+        <div class="mb-3">
+          <label class="form-lebal">Select Gender</label>
+          <select id="dropdown" class="form-select">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label class="form-lebal d-flex">Enter select one radio button</label>
+          <input
+            type="radio"
+            name="test"
+            value="value1"
+            class="form-check-input"
+          />
+          Value 1
+          <input
+            type="radio"
+            name="test"
+            value="value2"
+            class="form-check-input"
+          />
+          Value 2
+        </div>
+        <div class="mb-3">
+          <input
+            type="checkbox"
+            name="checkbox"
+            value="checkbox1"
+            class="form-check-input"
+          />
+          Student
+          <input
+            type="checkbox"
+            name="checkbox"
+            value="checkbox2"
+            class="form-check-input"
+          />
+          Teacher
+          <input
+            type="checkbox"
+            name="checkbox"
+            value="checkbox3"
+            class="form-check-input"
+          />
+          Admin
+        </div>
+        <div class="mb-3">
+          <label class="form-lebal d-flex">Enter Message</label>
+          <textarea
+            rows="4"
+            placeholder="Message"
+            class="form-control"
+          ></textarea>
+        </div>
+        <div class="mb-3">
+          <button id="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
+    </div>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+      crossorigin="anonymous"
+    ></script>
 
     <!--
 
@@ -22,6 +130,6 @@
     - The freeCodeCamp Team
 
     -->
-    <script  src="js/index.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
